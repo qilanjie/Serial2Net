@@ -638,7 +638,8 @@ end:
             if (textBoxLog.Text.Length > 4096)
                 textBoxLog.Text = textBoxLog.Text.Substring(textBoxLog.Text.Length - 4096);
 
-            textBoxLog.Text += text + "\r\n";
+//            textBoxLog.Text += text + "\r\n";
+            textBoxLog.Text = text + "\r\n";
             textBoxLog.SelectionStart = textBoxLog.Text.Length - 1;
             textBoxLog.ScrollToCaret();
         }
